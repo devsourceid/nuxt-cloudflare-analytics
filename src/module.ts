@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url'
 import { promises as fsp } from 'fs'
 import { join, dirname } from 'path'
-import { defineNuxtModule, createResolver, addServerHandler, addTemplate } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addServerHandler, addTemplate, addPlugin } from '@nuxt/kit'
 import { pluginName, configKey } from './config'
 
 export interface ModuleOptions {
@@ -110,9 +110,10 @@ export default defineNuxtModule<ModuleOptions>({
 				config.externals.inline.push(runtimeDir)
 				config.virtual = config.virtual || {}
 				config.virtual['#nuxt-cloudflare-analytics'] = virtualConfig
-				config.plugins = config.plugins || []
-				config.plugins.push(resolve(runtimeDir, 'nitro-plugin'))
 			})
+
+			// Add plugin to Nuxt 3
+			addPlugin(resolve(runtimeDir, 'nuxt-plugin'))
 
 			nuxt.options.build.transpile.push(runtimeDir)
 		}
