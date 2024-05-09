@@ -11,7 +11,7 @@ You can set environment variable `NODE_ENV` to `production` for testing in dev m
 
 ## Setup
 
-- Add `nuxt-cloudflare-analytics` dependency using yarn or npm to your project `npm i nuxt-cloudflare-analytics` or `yarn install nuxt-cloudflare-analytics`
+- Add `nuxt-cloudflare-analytics` dependency to your project with `npx nuxi@latest module add cloudflare-analytics`
 - Add `nuxt-cloudflare-analytics` to `modules` section of `nuxt.config.ts`
 
 ```ts
