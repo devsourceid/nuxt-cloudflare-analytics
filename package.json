@@ -1,60 +1,60 @@
 {
-	"name": "nuxt-cloudflare-analytics",
-	"version": "1.0.8",
-	"description": "Cloudflare Web Analytics Modules for NuxtJS",
-	"contributors": [
-		"Hamjs <hamknw@gmail.com>",
-		"madebyfabian <hello@madebyfabian.com>"
-	],
-	"publishConfig": {
-		"access": "public"
-	},
-	"keywords": [
-		"Vue",
-		"Nuxt",
-		"analytic",
-		"cloudflare",
-		"cloudflare analytic"
-	],
-	"engines": {
-		"npm": ">= 4.0.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/devsourceid/nuxt-cloudflare-analytics.git"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/devsourceid/nuxt-cloudflare-analytics/issues"
-	},
-	"homepage": "https://github.com/devsourceid/nuxt-cloudflare-analytics#readme",
-	"type": "module",
-	"exports": {
-		".": {
-			"import": "./dist/module.mjs",
-			"require": "./dist/module.cjs"
-		}
-	},
-	"main": "./dist/module.cjs",
-	"types": "./dist/types.d.ts",
-	"files": [
-		"dist"
-	],
-	"scripts": {
-		"prepack": "nuxt-module-build",
-		"start": "npm run dev",
-		"dev": "nuxi dev playground",
-		"dev:build": "nuxi build playground",
-		"dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
-	},
-	"dependencies": {
-		"@nuxt/kit": "^3.0.0"
-	},
-	"devDependencies": {
-		"@nuxt/module-builder": "^0.2.1",
-		"@nuxt/schema": "^3.0.0",
-		"@nuxtjs/eslint-config-typescript": "^12.0.0",
-		"eslint": "^8.31.0",
-		"nuxt": "^3.0.0"
-	}
+ "name": "nuxt-cloudflare-analytics",
+ "version": "1.0.8",
+ "description": "Cloudflare Web Analytics Modules for NuxtJS",
+ "contributors": [
+  "Hamjs <hamknw@gmail.com>",
+  "madebyfabian <hello@madebyfabian.com>"
+ ],
+ "publishConfig": {
+  "access": "public"
+ },
+ "keywords": [
+  "Vue",
+  "Nuxt",
+  "analytic",
+  "cloudflare",
+  "cloudflare analytic"
+ ],
+ "engines": {
+  "npm": ">= 4.0.0"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/devsourceid/nuxt-cloudflare-analytics.git"
+ },
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/devsourceid/nuxt-cloudflare-analytics/issues"
+ },
+ "homepage": "https://github.com/devsourceid/nuxt-cloudflare-analytics#readme",
+ "type": "module",
+ "exports": {
+  ".": {
+   "import": "./dist/module.mjs",
+   "require": "./dist/module.cjs"
+  }
+ },
+ "main": "./dist/module.cjs",
+ "types": "./dist/types.d.ts",
+ "files": [
+  "dist"
+ ],
+ "scripts": {
+  "prepack": "nuxt-module-build",
+  "start": "npm run dev",
+  "dev": "nuxi dev playground",
+  "dev:build": "nuxi build playground",
+  "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
+ },
+ "dependencies": {
+  "@nuxt/kit": "^3.0.0"
+ },
+ "devDependencies": {
+  "@nuxt/module-builder": "^0.8.3",
+  "@nuxt/schema": "^3.0.0",
+  "@nuxtjs/eslint-config-typescript": "^12.0.0",
+  "eslint": "^8.31.0",
+  "nuxt": "^3.0.0"
+ }
 }
